@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<h2 class="mb-4 text-center">Add New Employee</h2>
+
+<form action="/add" method="POST" class="card p-4 shadow-sm mx-auto" style="max-width: 600px;">
+  <div class="mb-3">
+    <label class="form-label">Employee Name</label>
+    <input type="text" class="form-control" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Designation</label>
+    <input type="text" class="form-control" name="designation" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Location</label>
+    <input type="text" class="form-control" name="location" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Salary</label>
+    <input type="number" class="form-control" name="salary" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Add Employee</button>
+</form>
+
+<%- include('partials/footer') %>
